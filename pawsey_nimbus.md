@@ -23,11 +23,15 @@ df -h | grep vda
 
 Transfer a file from local repo to Pawsey instance
 
-scp -i `name_of_your_key`.pem `local_file_path` `login_name`@###.###.###.###: instance_file_path
+`scp -i name_of_your_key.pem local_file_path login_name@###.###.###.###: instance_file_path`
 
 Transfer a directory from local repo to Pawsey instance
 
-scp -r -C -i ~/.ssh/segan-phd.pem Documents/Uni/PhD/Projects/7.wildlife_ngs_metabarcoding/NGS_data/AGRF_CAGRF20093816_JD8WJ-test/raw_data/ ubuntu@146.118.66.39:
+`scp -r -C -i ~/.ssh/segan-phd.pem Documents/Uni/PhD/Projects/7.wildlife_ngs_metabarcoding/NGS_data/AGRF_CAGRF20093816_JD8WJ-test/raw_data/ ubuntu@146.118.66.39:`
+
+example
+
+`scp -r -i ~/.ssh/segan-phd.pem Downloads/AGRF_CAGRF20093816_JDC6Y ubuntu@146.118.66.39:`
 
 ## Software
 
