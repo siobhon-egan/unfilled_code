@@ -10,7 +10,9 @@ Useful bits of links and code related to Pawsey Nimbus instance
 
 [Nimbus Documentation Land Page](https://support.pawsey.org.au/documentation/display/US/Nimbus+Documentation+Landing+Page)
 
-## Volume storage
+## Volume storage and disk space
+
+[Pawsey info on attaching volumes](https://pawseysc.github.io/using-nimbus/07-volume-storage/index.html)
 
 Get info on data storage
 
@@ -18,6 +20,12 @@ Get info on data storage
 df -h | grep vda
 ```
 > /dev/vda1        39G  3.6G   36G  10% /
+
+Get info on size of files in directory
+```
+ls -sh
+```
+
 
 ## Transfering data
 
