@@ -33,6 +33,11 @@ example
 
 `scp -r -i ~/.ssh/segan-phd.pem Downloads/AGRF_CAGRF20093816_JDC6Y ubuntu@146.118.66.39:`
 
+Transfer file from nimbus instance (directory called `analysis_done` to local computer (`current directory`)
+
+`scp -r -C -i ~/.ssh/segan-phd.pem ubuntu@146.118.66.39:/analysis_done/ .`
+
+
 ## Software
 
 This command updates the local database of available software packages for Ubuntu. At the end of the command, it tells you how many packages can be upgraded. To see them run the following command: `apt list --upgradable`.
