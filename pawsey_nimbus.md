@@ -21,6 +21,10 @@ df -h | grep vda
 
 ## Transfering data
 
+[Pawsey info](https://pawseysc.github.io/using-nimbus/08-moving-data/index.html)
+
+**1. From local computer to instance**
+
 Transfer a file from local repo to Pawsey instance
 
 `scp -i name_of_your_key.pem local_file_path login_name@###.###.###.###: instance_file_path`
@@ -33,9 +37,19 @@ example
 
 `scp -r -i ~/.ssh/segan-phd.pem Downloads/AGRF_CAGRF20093816_JDC6Y ubuntu@146.118.66.39:`
 
-Transfer file from nimbus instance (directory called `analysis_done` to local computer (`current directory`)
+**2. From instance to local computer**
+
+Transfer file from nimbus to local computer
+
+`scp -i name_of_your_key.pem login_name@###.###.###.###:instance_file_path/file.txt .`
+
+Transfer directory from nimbus instance (directory called `analysis_done`) to local computer (directory `current directory`)
 
 `scp -r -C -i ~/.ssh/segan-phd.pem ubuntu@146.118.66.39:/analysis_done/ .`
+
+Transfer directory from nimbus instance (directory called `analysis_done`) to local computer (directory `nimbus_output`)
+
+`scp -r -C -i ~/.ssh/segan-phd.pem ubuntu@146.118.66.39:/analysis_done/ nimbus_output/`
 
 
 ## Software
